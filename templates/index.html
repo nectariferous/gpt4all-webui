@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPT4All Web UI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>GPT4All Web UI</h1>
+        <div id="model-status">Model Initializing...</div>
+        <div class="chat-container">
+            <div id="chat-messages"></div>
+            <div class="input-container">
+                <textarea id="user-input" placeholder="Type your message here..."></textarea>
+                <button id="send-btn" disabled>Send</button>
+                <button id="reset-btn">Reset Conversation</button>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

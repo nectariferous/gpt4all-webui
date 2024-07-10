@@ -1,0 +1,4 @@
+flask==2.0.1
+werkzeug==2.0.1
+gpt4all==1.0.8
+flask-session==0.4.0
